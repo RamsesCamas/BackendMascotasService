@@ -1,0 +1,11 @@
+Crear contenedor MySQL
+docker run -d -p 33060:3306 --name mysql-db  -e MYSQL_ROOT_PASSWORD=secret --mount src=mysql-db-data,dst=/var/lib/mysql mysql
+
+Ejecutar contenedor:
+docker start mysql-db
+
+Entrar a la DB 
+docker exec -it mysql-db bin/bash
+
+    - dentro del contenedor
+      mysql -u root -p secret
