@@ -9,3 +9,6 @@ docker exec -it mysql-db bin/bash
 
     - dentro del contenedor
       mysql -u root -p secret
+
+    - una vez dentro de MySQL
+      create database petfind;
