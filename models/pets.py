@@ -12,5 +12,6 @@ pets = Table('pet', meta,
     Column('age', Integer),
     Column('gender', String(1)),
     Column('description', Text),
-    Column('location',String(255))
+    Column('location',String(255)),
+    Column('image_url', Text)
     )

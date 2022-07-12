@@ -27,7 +27,8 @@ if not sqlalchemy.inspect(engine).has_table("pet"):
     Column('gender', String(1)),
     Column('age', Integer),
     Column('description', Text),
-    Column('location',String(255))
+    Column('location',String(255)),
+    Column('image_url', Text)
     )
     metadata.create_all()
 conn = engine.connect()
